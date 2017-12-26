@@ -12,6 +12,7 @@ class User_model extends CI_Model
                  ->where('id',1)
                  ->get("user_accounts");
         $result = $q->result_array();
+        echo $result;
         return $result;
     }
 }
