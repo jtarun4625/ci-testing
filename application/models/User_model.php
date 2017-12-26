@@ -10,8 +10,7 @@ class User_model extends CI_Model
     {
         $this->load->database();
         $q = $this->db->query("SELECT * FROM user_accounts");
-        $result = $q->result();
-        echo "<pre>";
-        print_r($result);
+        $result = $q->result_array();
+        return $result;
     }
 }
