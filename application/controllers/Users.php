@@ -2,7 +2,7 @@
 
 class Users extends CI_Controller {
     public function index() {
-        $this->load->model(UserModel);
+        $this->load->model(usermodel);
         $data['users'] = $this->usermodel->getUsers();
         $this->load->view(user_list,$data);
     }
