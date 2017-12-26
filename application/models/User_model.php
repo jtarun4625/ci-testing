@@ -9,7 +9,9 @@ class User_model extends CI_Model
     public function getUsers()
     {
         $this->load->database();
-        $q = $this->db->query("SELECT * FROM user_accounts");
+        $q = $this->db->select('firstname','lastname')
+                 ->where('id',1)
+                 ->get("user_accounts");
         $result = $q->result_array();
         return $result;
     }
