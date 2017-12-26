@@ -8,7 +8,8 @@ class User_model extends CI_Model
     }
     public function getUsers()
     {
-        return [["firstname" => "User1", "lastname" => "Last Name"],
-            ["firstname" => "User2", "lastname" => "Last Name"]];
+        $this->load->database();
+        $q = $this->db->query("SELECT * FROM user_accounts");
+        print_r($q);
     }
 }
