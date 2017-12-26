@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>User List</title>
+    <title>User Hello World</title>
 </head>
 <body>
 <?php foreach ($users as $user): ?>
