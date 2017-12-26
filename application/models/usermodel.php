@@ -1,6 +1,6 @@
 <?php
 
-class User extends CI_Model
+class UserModel extends CI_Model
 {
     public function getUsers()
     {
